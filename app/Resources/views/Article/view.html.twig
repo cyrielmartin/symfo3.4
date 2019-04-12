@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>{{article.title}}</h1>
+<h2>Par {{article.author}}</h2>
+<p>{{article.body}}</p>
+
+<a href="/show-articles">Retour à la liste des articles</a>
+{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}

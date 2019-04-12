@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="col-5 mx-auto my-4">
+        <h1>Créer ou modifier un article</h1>
+        {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+        {{ form_widget(form) }}
+        <button class="btn btn-secondary" type="submit">
+            Valider
+        </button>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
