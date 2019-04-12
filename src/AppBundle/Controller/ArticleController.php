@@ -18,7 +18,7 @@ class ArticleController extends Controller
     {
         $articles = $this->getDoctrine()
         ->getRepository('AppBundle:Article')
-        ->findAll();
+        ->findByIdDesc();
 
         return $this->render('Article/show.html.twig', array(
             'articles' => $articles
